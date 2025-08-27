@@ -111,3 +111,10 @@ function fetchRandomQuote() {
       quoteDisplay.textContent = "Could not fetch quote at the moment.";
     });
 }
+
+
+const onHoldList = document.getElementById("on-hold-list");
+const addOnHoldCategory = document.createElement("h2");
+addOnHoldCategory.textContent = "On Hold";
+onHoldList.className = "task-list";
+onHoldList.appendChild(addOnHoldCategory);
